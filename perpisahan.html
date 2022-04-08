@@ -1,0 +1,75 @@
+<html><meta charset='UTF-8'/><meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport'/><meta content='IE=edge' http-equiv='X-UA-Compatible'/><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script><script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script><link href="https://Kalau.feeldream.repl.co/style.css" rel="stylesheet" type="text/css" /><script src="https://Kalau.feeldream.repl.co/script.js"></script>
+<head>
+<title> dariku untukmu </title>
+<!-- 
+This code was made by m masyhud
+Blog: https://sinkronin.com
+Instagram: masyhud99
+TikTok: id editor m2
+-->
+</head>
+<body><div id="bodyblur"><img id="wallpaper" src="" width="100%" height="100%"/></div>
+
+<div id='Content'>
+<div><blockquote id='bq'><img id="foto1" src=""/><p id="katakata"></p><p id="katabawah"></p>
+<p id="akhiran" onClick="menuju();">[ Kirim WhatsApp ]</p></blockquote></div>
+</div>
+
+<script>const body = document.querySelector("body");function createHeart() {const heart = document.createElement("div"); heart.className = "fas fa-heart-broken"; heart.style.left = (Math.random() * 90)+"vw"; heart.style.animationDuration = (Math.random()*3)+2+"s"; body.appendChild(heart);} setInterval(function name(params) {var heartArr = document.querySelectorAll(".fa-heart-broken"); if (heartArr.length > 100) {heartArr[0].remove()}},100);</script>
+<script>
+  function nonFo() {document.getElementById('idfoto').style.display = "none";} function showFo() {document.getElementById('idfoto').style.display = "block";}
+  function nonDiv() {document.getElementById('Content').style = "opacity:0;visibility:hidden;margin-top:30vh;";} 
+  function showDiv() {setTimeout(kpemb,100);document.getElementById('Content').style = "opacity:1;margin-top:4vh;animation:kont 3s infinite;";document.getElementById("katakata").innerHTML = kata1;document.getElementById("katabawah").innerHTML = kata2;}
+  function loadfoto() {document.getElementById('foto1').src = gambar1;}
+  function showAkhir() {setInterval(createHeart,200);document.getElementById('k2').style = "opacity:1;transform:scale(1);margin:0;";document.getElementById('ftdua').style = "transform:scale(1);";document.getElementById('final1').style = "transform:scale(1);";document.getElementById('Content').style.display = "none";}
+  function mulaiakhir() {nonDiv();setTimeout(showAkhir,1400);setTimeout(finalis,2400);}
+  function showTom() {document.getElementById('idkirim').style = "opacity:1;visibility:visible;margin-top:140px;";} function tombol(){contTom.style="display:flex";} function akhiran(){document.getElementById("akhiran").style = "display:inline-flex";}
+  function otomatis() {befanimkata();setTimeout(animkata,400);contTom.style="display:none";setTimeout(tombol,500);}
+  function befanimkata(){katakata.style="transform:scale(.01);";katabawah.style="transform:scale(.01);";} function animkata() {katakata.style="transform:scale(1);";katabawah.style="transform:scale(1);";}
+  function animakhir() {akhiran.style="display:block;";}
+  function kpemb() {setTimeout(akhiran,4300);setInterval(createHeart,200);document.getElementById("bq").style = "opacity:1;visibility:visible;margin-top:0";}
+</script>
+
+<script type="text/javascript">
+ const swals = Swal.mixin({allowOutsideClick: false, cancelButtonColor: '#FF0040',}); const swalsy = Swal.mixin({confirmButtonText: 'Iya', allowOutsideClick: false,}); const swalst = Swal.mixin({allowOutsideClick: false, showConfirmButton: false, timer: 2500, timerProgressBar: true,});
+ var today = new Date();var dd = String(today.getDate()).padStart(2, '0');var mm = String(today.getMonth() + 1).padStart(2, '0');var yyyy = today.getFullYear();
+ const monthNames = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"];
+ today = dd + ' ' + monthNames[today.getMonth()] + ' ' + yyyy;
+			
+  function play() {var audio = new Audio('' + linklagu);audio.play();}
+  async function menuju(){await swals.fire('asapora gelluh lebet Wa!');window.location = "https://api.whatsapp.com/send?phone=&text=" + pesanwhatsapp;setTimeout(maubucin,3500);}
+
+  async function apapun() {
+   wallpaper.src = "https://i.postimg.cc/wx50gfxJ/20220408-184553.jpg";
+   linklagu = 'https://Kalau.feeldream.repl.co/lagu.mp3';
+
+   await swals.fire('Sekarang lihat ini ya~');play();
+   
+   await swalst.fire({
+     title: 'mun la tak cinta,', 
+     imageUrl: 'https://i.ibb.co/K5mpjXT/mikirin.gif', imageWidth: 160, imageHeight: 160, allowOutsideClick: false, showCancelButton: false,
+   });
+   
+   await swalst.fire({
+     title: 'ngabele yeh', 
+     imageUrl: 'https://i.ibb.co/BZMFD0w/line.gif', imageWidth: 160, imageHeight: 160, allowOutsideClick: false, showCancelButton: false,
+   });
+   
+   await swalst.fire({
+     title: 'benni pah maelang tadek kaber:(', 
+     imageUrl: 'https://i.ibb.co/cvZxdnR/aduh.gif', imageWidth: 160, imageHeight: 160, allowOutsideClick: false, showCancelButton: false,
+   });
+
+   gambar1 = "https://i.ibb.co/khJDwtw/hehe-1.gif";
+   kata1 = "Hhhhaaaa &#128578;";
+   kata2 = "semoga bersama dengan orang yg kau sebut bahagia ";
+   
+   pesanwhatsapp = "selamat tinggal";
+   
+   showDiv();loadfoto();
+ }
+
+ apapun();
+</script>
+</body>
+</html>
